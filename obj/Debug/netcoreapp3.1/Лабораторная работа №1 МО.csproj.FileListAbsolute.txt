@@ -1,0 +1,13 @@
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\bin\Debug\netcoreapp3.1\Лабораторная работа №1 МО.exe
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\bin\Debug\netcoreapp3.1\Лабораторная работа №1 МО.deps.json
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\bin\Debug\netcoreapp3.1\Лабораторная работа №1 МО.runtimeconfig.json
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\bin\Debug\netcoreapp3.1\Лабораторная работа №1 МО.runtimeconfig.dev.json
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\bin\Debug\netcoreapp3.1\Лабораторная работа №1 МО.dll
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\bin\Debug\netcoreapp3.1\Лабораторная работа №1 МО.pdb
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\obj\Debug\netcoreapp3.1\Лабораторная работа №1 МО.csprojAssemblyReference.cache
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\obj\Debug\netcoreapp3.1\Лабораторная работа №1 МО.AssemblyInfoInputs.cache
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\obj\Debug\netcoreapp3.1\Лабораторная работа №1 МО.AssemblyInfo.cs
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\obj\Debug\netcoreapp3.1\Лабораторная работа №1 МО.csproj.CoreCompileInputs.cache
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\obj\Debug\netcoreapp3.1\Лабораторная работа №1 МО.dll
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\obj\Debug\netcoreapp3.1\Лабораторная работа №1 МО.pdb
+C:\Users\dimon\OneDrive\VI семестр\Методы оптимизации\Лабораторная работа №1\Лабораторная работа №1 МО\obj\Debug\netcoreapp3.1\Лабораторная работа №1 МО.genruntimeconfig.cache
