@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dimon\\OneDrive\\VI семестр\\Методы оптимизации\\Лабораторная работа №1\\Лабораторная работа №1 МО\\Лабораторная работа №1 МО.csproj",
+      "projectUniqueName": "C:\\Users\\dimon\\OneDrive\\NETI\\VI семестр\\Методы оптимизации\\Лабораторная работа №1\\Лабораторная работа №1 МО\\Лабораторная работа №1 МО.csproj",
       "projectName": "Лабораторная работа №1 МО",
-      "projectPath": "C:\\Users\\dimon\\OneDrive\\VI семестр\\Методы оптимизации\\Лабораторная работа №1\\Лабораторная работа №1 МО\\Лабораторная работа №1 МО.csproj",
+      "projectPath": "C:\\Users\\dimon\\OneDrive\\NETI\\VI семестр\\Методы оптимизации\\Лабораторная работа №1\\Лабораторная работа №1 МО\\Лабораторная работа №1 МО.csproj",
       "packagesPath": "C:\\Users\\dimon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dimon\\OneDrive\\VI семестр\\Методы оптимизации\\Лабораторная работа №1\\Лабораторная работа №1 МО\\obj\\",
+      "outputPath": "C:\\Users\\dimon\\OneDrive\\NETI\\VI семестр\\Методы оптимизации\\Лабораторная работа №1\\Лабораторная работа №1 МО\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

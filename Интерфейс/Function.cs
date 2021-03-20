@@ -8,8 +8,8 @@ namespace Лабораторная_работа__1_МО.Интерфейс
     {
         public double Value(double x)
         {
-            return (x - 5) * (x - 5);
-            //return 0.5 - x / 2 * Math.Exp(-x * x / 4);
+            //return (x - 5) * (x - 5);
+            return 0.5 - x / 2 * Math.Exp(-x * x / 4);
         }
     }
 }

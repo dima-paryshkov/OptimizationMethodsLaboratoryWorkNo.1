@@ -11,6 +11,7 @@ namespace Лабораторная_работа__1_МО
             DichometricsMethod DichometricsMethod = new DichometricsMethod();
             GoldenSectionMethod GoldenSectionMethod = new GoldenSectionMethod();
             FibonacciMethod FibonacciMethod = new FibonacciMethod();
+            ParabolMethods ParabolMethods = new ParabolMethods();
 
             double Eps = 1E-1;
             int N = 7;
@@ -44,6 +45,16 @@ namespace Лабораторная_работа__1_МО
                 Eps /= 1E+1;
             }
             Console.WriteLine();
+
+            Eps = 1E-1;
+            Console.Write("{0,20}", "Parabol      ");
+            for (int i = 0; i < 7; i++)
+            {
+                ParabolMethods.Do(a, b, Eps);
+                Console.Write("{0,10}", ParabolMethods.getNumberOfIterationsObjectiveFunction());
+                Eps /= 1E+1;
+            }
+            Console.WriteLine();
         }
 
         public static void showTable(double a, double b, double Eps)
@@ -51,6 +62,7 @@ namespace Лабораторная_работа__1_МО
             DichometricsMethod DichometricsMethod = new DichometricsMethod();
             GoldenSectionMethod GoldenSectionMethod = new GoldenSectionMethod();
             FibonacciMethod FibonacciMethod = new FibonacciMethod();
+            ParabolMethods ParabolMethods = new ParabolMethods();
 
 
             Console.WriteLine("Dichometrics Method: ");
@@ -67,6 +79,11 @@ namespace Лабораторная_работа__1_МО
             FibonacciMethod.Do(a, b, Eps);
             Console.WriteLine("Number Of Iterations: " + FibonacciMethod.getNumberOfIterationsObjectiveFunction());
             FibonacciMethod.ShowTable(Eps);
+
+            Console.WriteLine("Parabol Method: ");
+            ParabolMethods.Do(a, b, Eps);
+            Console.WriteLine("Number Of Iterations: " + ParabolMethods.getNumberOfIterationsObjectiveFunction());
+            ParabolMethods.ShowTable(Eps);
         }
 
         static void Main(string[] args)

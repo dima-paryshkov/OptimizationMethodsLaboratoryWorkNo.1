@@ -16,7 +16,7 @@ namespace Лабораторная_работа__1_МО.Интерфейс
         public void Add(double x1, double x2, double fx1, double fx2, double a, double b)
         {
             if (Table.Count > 1)
-                Table.Add(new Data(x1, x2, fx1, fx2, a, b, Table[Table.Count - 2].difference_ab));
+                Table.Add(new Data(x1, x2, fx1, fx2, a, b, Table[Table.Count - 1].difference_ab));
             else 
                 Table.Add(new Data(x1, x2, fx1, fx2, a, b));
         }
@@ -29,7 +29,7 @@ namespace Лабораторная_работа__1_МО.Интерфейс
 
             for (int i = 0; i < Table.Count; i++)
             {
-                Console.WriteLine("{0,3}   {1: 0.00000000}   {2: 0.00000000}   {3:0.000000000000000000}   {4:0.000000000000000000}       {5:0.00000000}       {6:0.00000000}        {7:0.00000000}        {8:0.00000000}",
+                Console.WriteLine("{0,3}   {1: 0.00000000}   {2: 0.00000000}   {3:0.000000000000000000}   {4:0.000000000000000000}       {5:0.00000000}       {6:0.00000000}        {7:0.0000000000}        {8:0.00000000}",
                         i, Table[i].x1, Table[i].x2, Table[i].fx1, Table[i].fx2, Table[i].a, Table[i].b, 
                                         Table[i].difference_ab, i == 0 ? 1 : Table[i].ratioOfIterations);
             }
