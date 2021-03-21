@@ -50,6 +50,7 @@ namespace Лабораторная_работа__1_МО.Методы
                 
                 DataTable.Add(Data.x1, Data.x2, Data.fx1, Data.fx2, Data.a, Data.b);
             }
+
         }
     }
 }

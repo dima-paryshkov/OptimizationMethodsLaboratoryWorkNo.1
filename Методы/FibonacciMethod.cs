@@ -28,7 +28,7 @@ namespace Лабораторная_работа__1_МО.Методы
 
             while (value > F[n]) n++;
 
-            return n - 2;
+            return n - 2 + 1;
         }
 
         public void Do(double a, double b, double Eps = 0.001)
@@ -52,7 +52,7 @@ namespace Лабораторная_работа__1_МО.Методы
             Data.fx2 = Func.Value(Data.x2);
             DataTable.Add(Data.x1, Data.x2, Data.fx1, Data.fx2, Data.a, Data.b);
 
-            NumberOfIterationsObjectiveFunction = 0;
+            NumberOfIterationsObjectiveFunction = 1;
             while (Math.Abs(Data.b - Data.a) > Eps)
             {
                 k++;

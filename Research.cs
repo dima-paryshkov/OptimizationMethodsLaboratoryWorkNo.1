@@ -14,7 +14,6 @@ namespace Лабораторная_работа__1_МО
             ParabolMethods ParabolMethods = new ParabolMethods();
 
             double Eps = 1E-1;
-            int N = 7;
             Console.WriteLine("{0,20} {1,10} {2,10} {3,10} {4,10} {5,8} {6,9} {7,9}", "Name Method | Eps", 1E-1, 1E-2, 1E-3, 1E-4, 1E-5, 1E-6, 1E-7);
 
             Console.Write("{0,20}", "Dichometrics      ");
@@ -79,24 +78,26 @@ namespace Лабораторная_работа__1_МО
             FibonacciMethod.Do(a, b, Eps);
             Console.WriteLine("Number Of Iterations: " + FibonacciMethod.getNumberOfIterationsObjectiveFunction());
             FibonacciMethod.ShowTable(Eps);
-
-            Console.WriteLine("Parabol Method: ");
-            ParabolMethods.Do(a, b, Eps);
-            Console.WriteLine("Number Of Iterations: " + ParabolMethods.getNumberOfIterationsObjectiveFunction());
-            ParabolMethods.ShowTable(Eps);
         }
 
         static void Main(string[] args)
         {
             Console.WriteLine("Number Of Iterations Objective Function: ");
-            allIteration(-2, 20);
+            allIteration(2, 5);
             Console.WriteLine();
-            showTable(-2, 20, 1E-7);
+            showTable(2, 5, 1E-7);
 
-            Console.WriteLine("Finding an interval containing a minimum: ");
-            IntervalSearch IntervalSearch = new IntervalSearch();
-            IntervalSearch.Search(0, 1E-2);
-            IntervalSearch.ShowResult();
+
+            ParabolMethods ParabolMethods = new ParabolMethods();
+            Console.WriteLine("Parabol Method: ");
+            ParabolMethods.Do(2, 5, 1E-7);
+            Console.WriteLine("Number Of Iterations: " + ParabolMethods.getNumberOfIterationsObjectiveFunction());
+            ParabolMethods.ShowTable(1E-7);
+
+            //Console.WriteLine("Finding an interval containing a minimum: ");
+            //IntervalSearch IntervalSearch = new IntervalSearch();
+            //IntervalSearch.Search(0, 1E-2);
+            //IntervalSearch.ShowResult();
 
             Console.ReadLine();
         }

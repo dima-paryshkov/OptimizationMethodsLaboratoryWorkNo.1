@@ -32,13 +32,14 @@ namespace Лабораторная_работа__1_МО.Методы
             f1 = func(x1);
             f2 = func(x2);
             f3 = func(x3);
+            xp = x;
+            DataTable.Add(x1, x3, f1, f3, x, xp);
             NumberOfIterationsObjectiveFunction += 3;
-            DataTable.Add(x1, x2, f1, f3, a, b);
             do
             {
                 xp = x;
-                a1 = (f2 - f1) / (x2 - x1);
-                a2 = (1 / (x3 - x2)) * ((f3 - f1) / (x3 - x1) - (f2 - f1) / (x2 - x1));
+                a1 = (f2 - f1) * (x3 - x2) / (x2 - x1);
+                a2 = ((f3 - f1) / (x3 - x1) - (f2 - f1) / (x2 - x1));
                 x = 0.5 * (x1 + x2 - (a1 / a2));
                 fx = func(x);
                 NumberOfIterationsObjectiveFunction++;
@@ -58,7 +59,7 @@ namespace Лабораторная_работа__1_МО.Методы
                         NumberOfIterationsObjectiveFunction += 2;
                     }
                 else 
-                    if (x1 < x2 && x2 < x && x < x3)
+                    if (x1 < x2 & x2 < x && x < x3)
                         if (fx >= f2)
                         {
                             x3 = x;
@@ -73,7 +74,7 @@ namespace Лабораторная_работа__1_МО.Методы
                             f2 = func(x2);
                             NumberOfIterationsObjectiveFunction += 2;
                         }
-                DataTable.Add(x1, x2, f1, f3, a, b);
+                DataTable.Add(x2, x3, f1, f3, x, xp);
             }
             while (Math.Abs(xp - x) > Eps);
             
