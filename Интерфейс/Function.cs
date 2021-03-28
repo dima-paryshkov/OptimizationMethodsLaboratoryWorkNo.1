@@ -10,7 +10,7 @@ namespace Лабораторная_работа__1_МО.Интерфейс
         {
             //return (x - 5) * (x - 5);
             //return 0.5 - x / 2 * Math.Exp(-x * x / 4);
-            return Math.Pow(x - 4, 4) + Math.Exp(x - 4);
+            return Math.Pow(x - 4, 4);// + Math.Exp(x - 4);
         }
     }
 }

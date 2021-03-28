@@ -16,6 +16,7 @@ namespace Лабораторная_работа__1_МО.Методы
 
         public void Do(double a, double b, double Eps = 0.001)
         {
+            NumberOfIteration = 0;
             DataTable.ClearTable();
             double Delta = Eps / 10;
             Data.a = a;
@@ -38,6 +39,7 @@ namespace Лабораторная_работа__1_МО.Методы
                 Data.fx1 = Func.Value(Data.x1);
                 Data.fx2 = Func.Value(Data.x2);
                 DataTable.Add(Data.x1, Data.x2, Data.fx1, Data.fx2, Data.a, Data.b);
+                NumberOfIteration++;
             }
             NumberOfIterationsObjectiveFunction *= 2;
         }

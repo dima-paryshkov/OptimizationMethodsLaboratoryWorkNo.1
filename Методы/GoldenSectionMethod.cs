@@ -17,6 +17,7 @@ namespace Лабораторная_работа__1_МО.Методы
         public void Do(double a, double b, double Eps = 0.001)
         {
             DataTable.ClearTable();
+            NumberOfIteration = 1;
             Data.a = a;
             Data.b = b;
             Data.difference_ab = Math.Abs(Data.b - Data.a);
@@ -47,7 +48,7 @@ namespace Лабораторная_работа__1_МО.Методы
                     Data.x2 = Data.a + (1 - 0.381966011) * Data.difference_ab;
                     Data.fx2 = Func.Value(Data.x2);
                 }
-                
+                NumberOfIteration ++;
                 DataTable.Add(Data.x1, Data.x2, Data.fx1, Data.fx2, Data.a, Data.b);
             }
 

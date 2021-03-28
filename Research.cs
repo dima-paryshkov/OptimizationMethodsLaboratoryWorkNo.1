@@ -14,13 +14,14 @@ namespace Лабораторная_работа__1_МО
             ParabolMethods ParabolMethods = new ParabolMethods();
 
             double Eps = 1E-1;
-            Console.WriteLine("{0,20} {1,10} {2,10} {3,10} {4,10} {5,8} {6,9} {7,9}", "Name Method | Eps", 1E-1, 1E-2, 1E-3, 1E-4, 1E-5, 1E-6, 1E-7);
+            Console.WriteLine("{0,20} {1,13} {2,13} {3,13} {4,13} {5,12} {6,14} {7,12" +
+                "}", "Name Method | Eps", 1E-1, 1E-2, 1E-3, 1E-4, 1E-5, 1E-6, 1E-7);
 
             Console.Write("{0,20}", "Dichometrics      ");
             for (int i = 0; i < 7; i++)
             {
                 DichometricsMethod.Do(a, b, Eps);
-                Console.Write("{0,10}", DichometricsMethod.getNumberOfIterationsObjectiveFunction());
+                Console.Write("{0,10}({1,2})", DichometricsMethod.getNumberOfIterationsObjectiveFunction(), DichometricsMethod.NumberOfIteration);
                 Eps /= 1E+1;
             }
             Console.WriteLine();
@@ -30,17 +31,17 @@ namespace Лабораторная_работа__1_МО
             for (int i = 0; i < 7; i++)
             {
                 GoldenSectionMethod.Do(a, b, Eps);
-                Console.Write("{0,10}", GoldenSectionMethod.getNumberOfIterationsObjectiveFunction());
+                Console.Write("{0,10}({1,2})", GoldenSectionMethod.getNumberOfIterationsObjectiveFunction(), GoldenSectionMethod.NumberOfIteration);
                 Eps /= 1E+1;
             }
             Console.WriteLine();
 
             Eps = 1E-1;
-            Console.Write("{0,20}", "Fibonacci      ");
+            Console.Write("{0,14}      ", "Fibonacci");
             for (int i = 0; i < 7; i++)
             {
                 FibonacciMethod.Do(a, b, Eps);
-                Console.Write("{0,10}", FibonacciMethod.getNumberOfIterationsObjectiveFunction());
+                Console.Write("{0,10}({1,2})", FibonacciMethod.getNumberOfIterationsObjectiveFunction(), FibonacciMethod.NumberOfIteration);
                 Eps /= 1E+1;
             }
             Console.WriteLine();
@@ -50,7 +51,7 @@ namespace Лабораторная_работа__1_МО
             for (int i = 0; i < 7; i++)
             {
                 ParabolMethods.Do(a, b, Eps);
-                Console.Write("{0,10}", ParabolMethods.getNumberOfIterationsObjectiveFunction());
+                Console.Write("{0,10}({1,2})", ParabolMethods.getNumberOfIterationsObjectiveFunction(), ParabolMethods.NumberOfIteration);
                 Eps /= 1E+1;
             }
             Console.WriteLine();
@@ -83,16 +84,16 @@ namespace Лабораторная_работа__1_МО
         static void Main(string[] args)
         {
             Console.WriteLine("Number Of Iterations Objective Function: ");
-            allIteration(2, 5);
+            allIteration(-2, 20);
             Console.WriteLine();
-            showTable(2, 5, 1E-7);
+            //showTable(2, 5, 1E-7);
 
 
-            ParabolMethods ParabolMethods = new ParabolMethods();
-            Console.WriteLine("Parabol Method: ");
-            ParabolMethods.Do(2, 5, 1E-7);
-            Console.WriteLine("Number Of Iterations: " + ParabolMethods.getNumberOfIterationsObjectiveFunction());
-            ParabolMethods.ShowTable(1E-7);
+            //ParabolMethods ParabolMethods = new ParabolMethods();
+            //Console.WriteLine("Parabol Method: ");
+            //ParabolMethods.Do(2, 5, 1E-7);
+            //Console.WriteLine("Number Of Iterations: " + ParabolMethods.getNumberOfIterationsObjectiveFunction());
+            //ParabolMethods.ShowTable(1E-7);
 
             //Console.WriteLine("Finding an interval containing a minimum: ");
             //IntervalSearch IntervalSearch = new IntervalSearch();

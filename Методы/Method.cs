@@ -15,6 +15,8 @@ namespace Лабораторная_работа__1_МО.Методы
 
         protected int NumberOfIterationsObjectiveFunction;
 
+        public int NumberOfIteration = 0;
+
         public int getNumberOfIterationsObjectiveFunction()
         {
             return NumberOfIterationsObjectiveFunction;

@@ -22,6 +22,7 @@ namespace Лабораторная_работа__1_МО.Методы
         public void Do(double a, double b, double Eps)
         {
             DataTable.ClearTable();
+            NumberOfIteration = 0;
             NumberOfIterationsObjectiveFunction = 0;
             double x1, x2, x3, f1, f2, f3, a1, a2, x, fx, xp;
 
@@ -75,6 +76,7 @@ namespace Лабораторная_работа__1_МО.Методы
                             NumberOfIterationsObjectiveFunction += 2;
                         }
                 DataTable.Add(x2, x3, f1, f3, x, xp);
+                NumberOfIteration++;
             }
             while (Math.Abs(xp - x) > Eps);
             
