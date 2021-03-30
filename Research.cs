@@ -84,9 +84,9 @@ namespace Лабораторная_работа__1_МО
         static void Main(string[] args)
         {
             Console.WriteLine("Number Of Iterations Objective Function: ");
-            allIteration(-2, 20);
+            //allIteration(-2, 20);
             Console.WriteLine();
-            //showTable(2, 5, 1E-7);
+            showTable(-2, 20, 1E-7);
 
 
             //ParabolMethods ParabolMethods = new ParabolMethods();
