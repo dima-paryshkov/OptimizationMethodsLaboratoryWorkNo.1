@@ -79,7 +79,6 @@ namespace Лабораторная_работа__1_МО.Методы
                 NumberOfIteration++;
             }
             while (Math.Abs(xp - x) > Eps);
-            
         }
     }
 }

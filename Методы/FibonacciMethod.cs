@@ -98,8 +98,9 @@ namespace Лабораторная_работа__1_МО.Методы
             int n = 1;
             while (Data.difference_ab / Eps > F[n]) 
                 n++;
+            // МЕНЯТЬ ТУТ
             n = n - 2 - 1;
-
+            // МЕНЯТЬ ТУТ
             int k = 0;
             double temp = F[n];
             double temp_2 = F[n + 2];
@@ -144,48 +145,3 @@ namespace Лабораторная_работа__1_МО.Методы
     }
 }
 
-
-
-//id Fibonacci()
-//{
-//    int i = 1;
-//    double res = (b - a) / eps;
-//    while (res >= searchFibonacci(i))
-//        i++;
-
-//    i = i - 2 - 1;
-
-//    double x1 = a + (searchFibonacci(i) / searchFibonacci(i + 2)) * (b - a);
-//    double x2 = a + b - x1;
-//    double s;
-
-//    double f1 = func(x1);
-//    double f2 = func(x2);
-
-//    while (Math.Abs(b - a) >= eps)
-//    {
-//        s = Math.Abs(b - a);
-
-//        if (f1 < f2)
-//        {
-//            b = x2;
-//            x2 = x1;
-//            f2 = f1;
-//            x1 = a + (searchFibonacci(i - iteration + 1) / searchFibonacci(i - iteration + 3)) * (b - a);
-//            f1 = func(x1);
-//        }
-//        else
-//        {
-//            a = x1;
-//            x1 = x2;
-//            f1 = f2;
-//            x2 = a + (searchFibonacci(i - iteration + 2) / searchFibonacci(i - iteration + 3)) * (b - a);
-//            f2 = func(x2);
-//        }
-
-//        resultWrite(x1, x2, f1, f2, iteration, s);
-
-//        iteration++;
-//    }
-
-//}
